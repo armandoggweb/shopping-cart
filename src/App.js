@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React, { useState } from 'react'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Shop from './components/Shop'
 import Nav from './components/Nav'
@@ -27,13 +27,10 @@ const App = () => {
       }
     }
   }
-  useEffect(() => {
 
-
-  })
   return (
     <div className="app">
-      <Router>
+      <Router basename="/">
         <Nav cartAmount={cartAmount} />
         <Switch>
           <Route exact path="/">
