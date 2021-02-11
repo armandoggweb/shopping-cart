@@ -1,0 +1,40 @@
+nav {
+  position: sticky;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  top: 10px;
+}
+
+nav>ul {
+  list-style: none;
+  height: 50px;
+  background-color: lightpink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 50px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: white;
+}
+
+nav a:hover {
+  border-color: white;
+}
+
+.cartNav {
+  display: flex;
+  align-items: center;
+}
+
+.cartIcon {
+  width: 20px;
+  height: 20px;
+  background: url(icons/shopping_cart-white-18dp.svg) no-repeat center;
+}

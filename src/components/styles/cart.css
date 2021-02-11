@@ -1,0 +1,36 @@
+table {
+  text-align: center;
+}
+
+th,
+td {
+  padding: 0 50px;
+}
+
+.title {
+  width: 400px;
+  padding: 0px;
+}
+
+.bg-color {
+  background-color: lightpink;
+}
+
+.total {
+  text-align: right;
+}
+
+.payment {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  float: right;
+  margin-right: 50px;
+  background: url(icons/payment-24px.svg) no-repeat center;
+}
+
+.payment:hover{
+  border-color: lightpink;
+}
