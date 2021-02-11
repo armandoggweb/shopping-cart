@@ -6,7 +6,7 @@ const Cards = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch('https://fakestoreapi.com/products/')
+      const response = await fetch('https://fakestoreapi.com/products/', {mode: 'cors'})
       const items = await response.json()
       setProducts(items)
     })()
